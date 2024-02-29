@@ -1,0 +1,107 @@
+
+
+h1{
+    color: red;
+    text-decoration: underline;
+}
+
+.titulo-principal{
+    color: brown;
+    background-color: hotpink;
+    text-align: center;
+}
+
+/* Por lo general para texto se mide en px, para otros elementos se pueden usar distintas medidas */
+.texto-secundario{
+    font-size: 40px;
+}
+
+#texto-card{
+    color: aqua;
+}
+
+header{
+    background-image: url(/img/leaves.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    /*Imagen queda fija al hacer scroll*/
+
+    /*background-position-x: 50;
+}*/
+
+    /*Backgroud-position, con x muevo la imagen hacia los costados, negativo es izq y positivo es der, con Y arriba positivo, negativo abajo*/
+
+    header nav ul{
+        list-style: url(/img/heart-icon.svg)
+    }
+
+    header nav ul a{
+        color: blue;
+        text-decoration: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: capitalize; /*upercase, todas mayusculas. capitalize, la primera solo mayuscula*/
+        font-family: "Protest Revolution", sans-serif;
+    }
+
+    div {
+        background-color: beige;
+        width: 400px;
+        height: 250px;
+
+/* Padding o relleno o margen del texto*/ 
+        /*padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-left: none;*/
+
+/*mismo relleno para todos lados*/
+        /* padding: 60px;*/
+/*los cuatro lados en sentido del reloj*/ 
+padding: 20px 40px 60px 100px;
+
+/*Border*/
+border: 1px solid brown;
+border-bottom: 2px solid black;
+
+/*Margin o margen de la caja*/
+/*margin-top: ;
+margin-right: ;
+margin-bottom: ;
+margin-left: ;*/
+margin: 40px 20px 60px 30px;
+
+/*Pone el elemento en linea pero respeta los anchos, alros y box model de los elementos internos */
+/*display: inline-block;*/
+
+/*Ocultar la caja*/
+/*display: none;*/ 
+
+/* Se habilitan los 4 lados 
+la caja se va a mover segun su posicion original
+*/
+/* position: relative;
+top: 80px;
+left: 200px; */
+
+/* Absolute, equivale a la posicion completa de la pantalla*/
+/* position: absolute; 
+top: 80px;
+left: 200px; */
+
+/* Fixed, deja fijo a nuestro elemento en un lugar */
+/* position: fixed;
+top: 0; */
+
+/* Funciona como fixed, pero se activa cuando pasa el scroll en su lugar */
+position: sticky;
+top: 50px;
+/*z-index, hace aparecer los planes, positivo arriba, negativo abajo */
+z-index: -1;
+    }
+
+
